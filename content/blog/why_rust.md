@@ -72,4 +72,4 @@ fn check_age(user: User) {
 }
 ```
 
-Rust also has no garbage collection, so it has a small runtime footprint. It almost has the compile size of C. But where it differs, is its compiler. Rust checks *before* you compile your code, if there are no errors, access to not existing memory and so forth in place. 
+Rust also has no garbage collection, so it has a small runtime footprint. It almost has the compile size of C. But where it differs, is its compiler. Rust checks *before* you compile your code, if there are no errors, access to not existing memory and so forth in place.It can do this by a new concept called "ownership". Whenever a new value is being created, this value has one explicit owner.  

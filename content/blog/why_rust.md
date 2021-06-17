@@ -5,7 +5,7 @@ date = 2021-06-15
 
 Choosing Rust for web development is two-fold. First, we need to look at why you want to choose it as a programming language by itself, and then look at if it is a good match for web development in general.
 
-## Why Rust?
+### Rich type system
 
 Rust is a strictly typed language, with a flexible way of expressing yourself. You can define your own objects (`struct`):
 
@@ -72,4 +72,39 @@ fn check_age(user: User) {
 }
 ```
 
-Rust also has no garbage collection, so it has a small runtime footprint. It almost has the compile size of C. But where it differs, is its compiler. Rust checks *before* you compile your code, if there are no errors, access to not existing memory and so forth in place.It can do this by a new concept called "ownership". Whenever a new value is being created, this value has one explicit owner.  
+Implementing behavior on these types is done via so-called impl block:
+
+```rust
+impl User {
+    fn new(name: Name) -> User {
+        name,
+        age: None,
+        addresS: None,
+    }
+
+    fn assign_age(&self, age: u64) -> User {
+        self.age = age;
+
+        self
+    }
+
+    is_old_enough(&self, required_age: u64) -> bool {
+        self.age >= required_age
+    }
+}
+
+fn main() {
+    let n = Name { first_name: "FirstName".to_string(), name: "LastName".to_string() };
+    let u = User::new(n);
+    n.assign_age(30);
+
+    println!("{}" n.is_old_enough(18));
+}
+
+```
+
+### Ownership
+
+Rust also has no garbage collection, so it has a small runtime footprint. It almost has the compile size of C. But where it differs, is its compiler. Rust checks *before* you compile your code, if there are no errors, access to not existing memory and so forth in place.It can do this by a new concept called "ownership". Whenever a new value is being created, this value has one explicit owner. 
+
+

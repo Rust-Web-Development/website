@@ -61,7 +61,7 @@
   <h1 class="page-title">Why choose Rust for Web Development?</h1>
   <span class="page-date">June 15, 2021</span>
   <p>Choosing Rust for web development is two-fold. First, we need to look at why you want to choose it as a programming language by itself, and then look at if it is a good match for web development in general.</p>
-<h2 id="why-rust">Why Rust?</h2>
+<h3 id="rich-type-system">Rich type system</h3>
 <p>Rust is a strictly typed language, with a flexible way of expressing yourself. You can define your own objects (<code>struct</code>):</p>
 <pre style="background-color:#2b303b;">
 <code class="language-rust" data-lang="rust"><span style="color:#b48ead;">struct </span><span style="color:#c0c5ce;">User {
@@ -117,7 +117,36 @@
     }
 }
 </span></code></pre>
-<p>Rust also has no garbage collection, so it has a small runtime footprint. It almost has the compile size of C. But where it differs, is its compiler. Rust checks <em>before</em> you compile your code, if there are no errors, access to not existing memory and so forth in place.It can do this by a new concept called &quot;ownership&quot;. Whenever a new value is being created, this value has one explicit owner.</p>
+<p>Implementing behavior on these types is done via so-called impl block:</p>
+<pre style="background-color:#2b303b;">
+<code class="language-rust" data-lang="rust"><span style="color:#b48ead;">impl </span><span style="color:#c0c5ce;">User {
+    </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">new</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">name</span><span style="color:#c0c5ce;">: Name) -&gt; User {
+        name,
+        age: None,
+        addresS: None,
+    }
+
+    </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">assign_age</span><span style="color:#c0c5ce;">(&amp;</span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">, </span><span style="color:#bf616a;">age</span><span style="color:#c0c5ce;">: </span><span style="color:#b48ead;">u64</span><span style="color:#c0c5ce;">) -&gt; User {
+        </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.age = age;
+
+        </span><span style="color:#bf616a;">self
+    </span><span style="color:#c0c5ce;">}
+
+    </span><span style="color:#96b5b4;">is_old_enough</span><span style="color:#c0c5ce;">(&amp;</span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">, required_age: </span><span style="color:#b48ead;">u64</span><span style="color:#c0c5ce;">) -&gt; </span><span style="color:#b48ead;">bool </span><span style="color:#c0c5ce;">{
+        </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.age &gt;= required_age
+    }
+}
+
+</span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">main</span><span style="color:#c0c5ce;">() {
+    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> n = Name { first_name: &quot;</span><span style="color:#a3be8c;">FirstName</span><span style="color:#c0c5ce;">&quot;.</span><span style="color:#96b5b4;">to_string</span><span style="color:#c0c5ce;">(), name: &quot;</span><span style="color:#a3be8c;">LastName</span><span style="color:#c0c5ce;">&quot;.</span><span style="color:#96b5b4;">to_string</span><span style="color:#c0c5ce;">() };
+    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> u = User::new(n);
+    n.</span><span style="color:#96b5b4;">assign_age</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">30</span><span style="color:#c0c5ce;">);
+
+    println!(&quot;</span><span style="color:#d08770;">{}</span><span style="color:#c0c5ce;">&quot; n.</span><span style="color:#96b5b4;">is_old_enough</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">18</span><span style="color:#c0c5ce;">));
+}
+
+</span></code></pre><h3 id="ownership">Ownership</h3>
+<p>Rust also has no garbage collection, so it has a small runtime footprint. It almost has the compile size of C. But where it differs, is its compiler. Rust checks <em>before</em> you compile your code, if there are no errors, access to not existing memory and so forth in place.It can do this by a new concept called &quot;ownership&quot;. Whenever a new value is being created, this value has one explicit owner. </p>
 
 </div>
  

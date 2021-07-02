@@ -5,7 +5,7 @@ template = "index.html"
 
 # Talks about Rust Web Development
 
-Here is a list of talks I have given about the topic. 
+Here is a list of talks I gave about the topic. 
 
 <div class="card">
     <h3>[2021] Amsource - Rust Web Development Q&A</h3>

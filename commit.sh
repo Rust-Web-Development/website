@@ -6,7 +6,7 @@ cd ../../
 
 git add .
 
-git commit -m "Latest blog changes"
+git commit -m "Auto generated message"
 
 git push origin main
 

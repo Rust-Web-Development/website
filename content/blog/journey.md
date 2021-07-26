@@ -10,6 +10,7 @@ Handpicked resources where I think, once you go through them (it will take proba
 - [Final Project: Building a Multithreaded Web Server - The Rust Programming Language](https://doc.rust-lang.org/book/ch20-00-final-project-a-web-server.html)
 - [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/html/)
 - [Introduction | ØMQ - The Guide](https://zguide.zeromq.org/)
+- [Writing an OS in Rust](https://os.phil-opp.com/)
 
 ### Required Watching
 - [TCP in Rust - 1](https://www.youtube.com/watch?v=bzja9fQWzdA&)

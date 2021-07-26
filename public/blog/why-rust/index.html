@@ -11,9 +11,9 @@
       <title>Rust Web Development</title>
 
       <!-- CSS -->
-      <link rel="stylesheet" href="https:&#x2F;&#x2F;rustwebdevelopment.com&#x2F;print.css" media="print">
-      <link rel="stylesheet" href="https:&#x2F;&#x2F;rustwebdevelopment.com&#x2F;poole.css">
-      <link rel="stylesheet" href="https:&#x2F;&#x2F;rustwebdevelopment.com&#x2F;hyde.css">
+      <link rel="stylesheet" href="https://rustwebdevelopment.com/print.css" media="print">
+      <link rel="stylesheet" href="https://rustwebdevelopment.com/poole.css">
+      <link rel="stylesheet" href="https://rustwebdevelopment.com/hyde.css">
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -63,89 +63,84 @@
   <p>Choosing Rust for web development is two-fold. First, we need to look at why you want to choose it as a programming language by itself, and then look at if it is a good match for web development in general.</p>
 <h3 id="rich-type-system">Rich type system</h3>
 <p>Rust is a strictly typed language, with a flexible way of expressing yourself. You can define your own objects (<code>struct</code>):</p>
-<pre style="background-color:#2b303b;">
-<code class="language-rust" data-lang="rust"><span style="color:#b48ead;">struct </span><span style="color:#c0c5ce;">User {
-    </span><span style="color:#bf616a;">name</span><span style="color:#c0c5ce;">: String,
-    </span><span style="color:#bf616a;">first_name</span><span style="color:#c0c5ce;">: String,
-    </span><span style="color:#bf616a;">age</span><span style="color:#c0c5ce;">: </span><span style="color:#b48ead;">u64</span><span style="color:#c0c5ce;">,
-    </span><span style="color:#bf616a;">address</span><span style="color:#c0c5ce;">: String,
-}
+<pre data-lang="rust" style="background-color:#2b303b;color:#c0c5ce;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#b48ead;">struct </span><span>User {
+</span><span>    </span><span style="color:#bf616a;">name</span><span>: String,
+</span><span>    </span><span style="color:#bf616a;">first_name</span><span>: String,
+</span><span>    </span><span style="color:#bf616a;">age</span><span>: </span><span style="color:#b48ead;">u64</span><span>,
+</span><span>    </span><span style="color:#bf616a;">address</span><span>: String,
+</span><span>}
 </span></code></pre>
 <p>We already see here that we can improve this piece of code by giving it more meaning. We can add additional structures around information like address and name:</p>
-<pre style="background-color:#2b303b;">
-<code class="language-rust" data-lang="rust"><span style="color:#b48ead;">struct </span><span style="color:#c0c5ce;">Name {
-    </span><span style="color:#bf616a;">first</span><span style="color:#c0c5ce;">: String,
-    </span><span style="color:#bf616a;">last</span><span style="color:#c0c5ce;">: String,
-}
-
-</span><span style="color:#b48ead;">struct </span><span style="color:#c0c5ce;">Address: {
-    </span><span style="color:#bf616a;">street_name</span><span style="color:#c0c5ce;">: String,
-    </span><span style="color:#bf616a;">house_number</span><span style="color:#c0c5ce;">: </span><span style="color:#b48ead;">u64</span><span style="color:#c0c5ce;">,
-    </span><span style="color:#bf616a;">city</span><span style="color:#c0c5ce;">: String,
-    </span><span style="color:#bf616a;">country</span><span style="color:#c0c5ce;">: String,
-    </span><span style="color:#bf616a;">postal_code</span><span style="color:#c0c5ce;">: </span><span style="color:#b48ead;">u64</span><span style="color:#c0c5ce;">,
-}
-
-</span><span style="color:#b48ead;">struct </span><span style="color:#c0c5ce;">User {
-    </span><span style="color:#bf616a;">name</span><span style="color:#c0c5ce;">: Name,
-    </span><span style="color:#bf616a;">age</span><span style="color:#c0c5ce;">: </span><span style="color:#b48ead;">u64</span><span style="color:#c0c5ce;">,
-    </span><span style="color:#bf616a;">address</span><span style="color:#c0c5ce;">: Address,
-}
-
+<pre data-lang="rust" style="background-color:#2b303b;color:#c0c5ce;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#b48ead;">struct </span><span>Name {
+</span><span>    </span><span style="color:#bf616a;">first</span><span>: String,
+</span><span>    </span><span style="color:#bf616a;">last</span><span>: String,
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">struct </span><span>Address: {
+</span><span>    </span><span style="color:#bf616a;">street_name</span><span>: String,
+</span><span>    </span><span style="color:#bf616a;">house_number</span><span>: </span><span style="color:#b48ead;">u64</span><span>,
+</span><span>    </span><span style="color:#bf616a;">city</span><span>: String,
+</span><span>    </span><span style="color:#bf616a;">country</span><span>: String,
+</span><span>    </span><span style="color:#bf616a;">postal_code</span><span>: </span><span style="color:#b48ead;">u64</span><span>,
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">struct </span><span>User {
+</span><span>    </span><span style="color:#bf616a;">name</span><span>: Name,
+</span><span>    </span><span style="color:#bf616a;">age</span><span>: </span><span style="color:#b48ead;">u64</span><span>,
+</span><span>    </span><span style="color:#bf616a;">address</span><span>: Address,
+</span><span>}
+</span><span>
 </span></code></pre>
 <p>But what if we don't have the <code>age</code> or <code>address</code> of a user? Rust has Enums as well. One popular one is the Option enum, which gives you the ability to express if something has a value or not. So no null pointers or undefined in Rust:</p>
-<pre style="background-color:#2b303b;">
-<code class="language-rust" data-lang="rust"><span style="color:#b48ead;">enum </span><span style="color:#c0c5ce;">Option&lt;T&gt; {
-    None,
-    Some(T),
-}
+<pre data-lang="rust" style="background-color:#2b303b;color:#c0c5ce;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#b48ead;">enum </span><span>Option&lt;T&gt; {
+</span><span>    None,
+</span><span>    Some(T),
+</span><span>}
 </span></code></pre>
 <p>We can see it in action in our user struct:</p>
-<pre style="background-color:#2b303b;">
-<code class="language-rust" data-lang="rust"><span style="color:#b48ead;">struct </span><span style="color:#c0c5ce;">User {
-    </span><span style="color:#bf616a;">name</span><span style="color:#c0c5ce;">: Name,
-    </span><span style="color:#bf616a;">age</span><span style="color:#c0c5ce;">: Option&lt;</span><span style="color:#b48ead;">u64</span><span style="color:#c0c5ce;">&gt;,
-    </span><span style="color:#bf616a;">address</span><span style="color:#c0c5ce;">: Option&lt;Address&gt;,
-}
+<pre data-lang="rust" style="background-color:#2b303b;color:#c0c5ce;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#b48ead;">struct </span><span>User {
+</span><span>    </span><span style="color:#bf616a;">name</span><span>: Name,
+</span><span>    </span><span style="color:#bf616a;">age</span><span>: Option&lt;</span><span style="color:#b48ead;">u64</span><span>&gt;,
+</span><span>    </span><span style="color:#bf616a;">address</span><span>: Option&lt;Address&gt;,
+</span><span>}
 </span></code></pre>
 <p>We later on can check in our code if an object has a variable set or not, and the compiler errors if we try to access a variable which might not be set:</p>
-<pre style="background-color:#2b303b;">
-<code class="language-rust" data-lang="rust"><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">check_age</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">user</span><span style="color:#c0c5ce;">: User) {
-    </span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> user.age {
-        Some(age) =&gt; println!(&quot;</span><span style="color:#a3be8c;">The age is </span><span style="color:#d08770;">{}</span><span style="color:#c0c5ce;">&quot;, age),
-        None =&gt; println!(&quot;</span><span style="color:#a3be8c;">We don&#39;t know the age of the user!</span><span style="color:#c0c5ce;">&quot;),
-    }
-}
+<pre data-lang="rust" style="background-color:#2b303b;color:#c0c5ce;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">check_age</span><span>(</span><span style="color:#bf616a;">user</span><span>: User) {
+</span><span>    </span><span style="color:#b48ead;">match</span><span> user.age {
+</span><span>        Some(age) =&gt; println!(&quot;</span><span style="color:#a3be8c;">The age is </span><span style="color:#d08770;">{}</span><span>&quot;, age),
+</span><span>        None =&gt; println!(&quot;</span><span style="color:#a3be8c;">We don&#39;t know the age of the user!</span><span>&quot;),
+</span><span>    }
+</span><span>}
 </span></code></pre>
 <p>Implementing behavior on these types is done via so-called impl block:</p>
-<pre style="background-color:#2b303b;">
-<code class="language-rust" data-lang="rust"><span style="color:#b48ead;">impl </span><span style="color:#c0c5ce;">User {
-    </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">new</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">name</span><span style="color:#c0c5ce;">: Name) -&gt; User {
-        name,
-        age: None,
-        addresS: None,
-    }
-
-    </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">assign_age</span><span style="color:#c0c5ce;">(&amp;</span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">, </span><span style="color:#bf616a;">age</span><span style="color:#c0c5ce;">: </span><span style="color:#b48ead;">u64</span><span style="color:#c0c5ce;">) -&gt; User {
-        </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.age = age;
-
-        </span><span style="color:#bf616a;">self
-    </span><span style="color:#c0c5ce;">}
-
-    </span><span style="color:#96b5b4;">is_old_enough</span><span style="color:#c0c5ce;">(&amp;</span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">, required_age: </span><span style="color:#b48ead;">u64</span><span style="color:#c0c5ce;">) -&gt; </span><span style="color:#b48ead;">bool </span><span style="color:#c0c5ce;">{
-        </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.age &gt;= required_age
-    }
-}
-
-</span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">main</span><span style="color:#c0c5ce;">() {
-    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> n = Name { first_name: &quot;</span><span style="color:#a3be8c;">FirstName</span><span style="color:#c0c5ce;">&quot;.</span><span style="color:#96b5b4;">to_string</span><span style="color:#c0c5ce;">(), name: &quot;</span><span style="color:#a3be8c;">LastName</span><span style="color:#c0c5ce;">&quot;.</span><span style="color:#96b5b4;">to_string</span><span style="color:#c0c5ce;">() };
-    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> u = User::new(n);
-    n.</span><span style="color:#96b5b4;">assign_age</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">30</span><span style="color:#c0c5ce;">);
-
-    println!(&quot;</span><span style="color:#d08770;">{}</span><span style="color:#c0c5ce;">&quot; n.</span><span style="color:#96b5b4;">is_old_enough</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">18</span><span style="color:#c0c5ce;">));
-}
-
-</span></code></pre><h3 id="ownership">Ownership</h3>
+<pre data-lang="rust" style="background-color:#2b303b;color:#c0c5ce;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#b48ead;">impl </span><span>User {
+</span><span>    </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">new</span><span>(</span><span style="color:#bf616a;">name</span><span>: Name) -&gt; User {
+</span><span>        name,
+</span><span>        age: None,
+</span><span>        addresS: None,
+</span><span>    }
+</span><span>
+</span><span>    </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">assign_age</span><span>(&amp;</span><span style="color:#bf616a;">self</span><span>, </span><span style="color:#bf616a;">age</span><span>: </span><span style="color:#b48ead;">u64</span><span>) -&gt; User {
+</span><span>        </span><span style="color:#bf616a;">self</span><span>.age = age;
+</span><span>
+</span><span>        </span><span style="color:#bf616a;">self
+</span><span>    }
+</span><span>
+</span><span>    </span><span style="color:#96b5b4;">is_old_enough</span><span>(&amp;</span><span style="color:#bf616a;">self</span><span>, required_age: </span><span style="color:#b48ead;">u64</span><span>) -&gt; </span><span style="color:#b48ead;">bool </span><span>{
+</span><span>        </span><span style="color:#bf616a;">self</span><span>.age &gt;= required_age
+</span><span>    }
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">main</span><span>() {
+</span><span>    </span><span style="color:#b48ead;">let</span><span> n = Name { first_name: &quot;</span><span style="color:#a3be8c;">FirstName</span><span>&quot;.</span><span style="color:#96b5b4;">to_string</span><span>(), name: &quot;</span><span style="color:#a3be8c;">LastName</span><span>&quot;.</span><span style="color:#96b5b4;">to_string</span><span>() };
+</span><span>    </span><span style="color:#b48ead;">let</span><span> u = User::new(n);
+</span><span>    n.</span><span style="color:#96b5b4;">assign_age</span><span>(</span><span style="color:#d08770;">30</span><span>);
+</span><span>
+</span><span>    println!(&quot;</span><span style="color:#d08770;">{}</span><span>&quot; n.</span><span style="color:#96b5b4;">is_old_enough</span><span>(</span><span style="color:#d08770;">18</span><span>));
+</span><span>}
+</span><span>
+</span></code></pre>
+<h3 id="ownership">Ownership</h3>
 <p>Rust also has no garbage collection, so it has a small runtime footprint. It almost has the compile size of C. But where it differs, is its compiler. Rust checks <em>before</em> you compile your code, if there are no errors, access to not existing memory and so forth in place.It can do this by a new concept called &quot;ownership&quot;. Whenever a new value is being created, this value has one explicit owner. </p>
 
 </div>

@@ -1,9 +1,9 @@
 +++
-title = "Why choose Rust for Web Development?"
+title = "Why Rust for Web Development? - The Type System"
 date = 2021-06-15
 +++
 
-Choosing Rust for web development is two-fold. First, we need to look at why you want to choose it as a programming language by itself, and then look at if it is a good match for web development in general.
+Need a reason or look for arguments to use Rust for your next project? I collect reasons in the "Why Rust" series. This time, we look a bit at the type system.
 
 ### Rich type system
 
@@ -84,7 +84,6 @@ impl User {
 
     fn assign_age(&self, age: u64) -> User {
         self.age = age;
-
         self
     }
 
@@ -102,9 +101,4 @@ fn main() {
 }
 
 ```
-
-### Ownership
-
-Rust also has no garbage collection, so it has a small runtime footprint. It almost has the compile size of C. But where it differs, is its compiler. Rust checks *before* you compile your code, if there are no errors, access to not existing memory and so forth in place.It can do this by a new concept called "ownership". Whenever a new value is being created, this value has one explicit owner. 
-
 

@@ -45,6 +45,8 @@
                         
                         <li class="sidebar-nav-item"><a href="https:&#x2F;&#x2F;rustwebdevelopment.com&#x2F;talks&#x2F;">Talks</a></li>
                         
+                        <li class="sidebar-nav-item"><a href="https:&#x2F;&#x2F;rustwebdevelopment.com&#x2F;interviews&#x2F;">Interviews</a></li>
+                        
                         <li class="sidebar-nav-item"><a href="https:&#x2F;&#x2F;github.com&#x2F;Rust-Web-Development">GitHub</a></li>
                         
                         <li class="sidebar-nav-item"><a href="https:&#x2F;&#x2F;twitter.com&#x2F;recvonline">Author</a></li>
@@ -58,9 +60,9 @@
         <div class="content container">
             
 <div>
-  <h1 class="page-title">Why choose Rust for Web Development?</h1>
+  <h1 class="page-title">Why Rust for Web Development? - The Type System</h1>
   <span class="page-date">June 15, 2021</span>
-  <p>Choosing Rust for web development is two-fold. First, we need to look at why you want to choose it as a programming language by itself, and then look at if it is a good match for web development in general.</p>
+  <p>Need a reason or look for arguments to use Rust for your next project? I collect reasons in the &quot;Why Rust&quot; series. This time, we look a bit at the type system.</p>
 <h3 id="rich-type-system">Rich type system</h3>
 <p>Rust is a strictly typed language, with a flexible way of expressing yourself. You can define your own objects (<code>struct</code>):</p>
 <pre data-lang="rust" style="background-color:#2b303b;color:#c0c5ce;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#b48ead;">struct </span><span>User {
@@ -122,7 +124,6 @@
 </span><span>
 </span><span>    </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">assign_age</span><span>(&amp;</span><span style="color:#bf616a;">self</span><span>, </span><span style="color:#bf616a;">age</span><span>: </span><span style="color:#b48ead;">u64</span><span>) -&gt; User {
 </span><span>        </span><span style="color:#bf616a;">self</span><span>.age = age;
-</span><span>
 </span><span>        </span><span style="color:#bf616a;">self
 </span><span>    }
 </span><span>
@@ -140,8 +141,6 @@
 </span><span>}
 </span><span>
 </span></code></pre>
-<h3 id="ownership">Ownership</h3>
-<p>Rust also has no garbage collection, so it has a small runtime footprint. It almost has the compile size of C. But where it differs, is its compiler. Rust checks <em>before</em> you compile your code, if there are no errors, access to not existing memory and so forth in place.It can do this by a new concept called &quot;ownership&quot;. Whenever a new value is being created, this value has one explicit owner. </p>
 
 </div>
  

@@ -8,6 +8,15 @@ template = "index.html"
 Here is a list of talks I gave about the topic. 
 
 <div class="card">
+    <h3>[2021] Rust&Tell - One tutorial to rule them all</h3>
+    I gave a talk at the Rust&Tell MeetUp about a tutorial I created to learn Rust in a web development context. The <a href="https://git.sr.ht/~gruberb/onetutorial">code can be found here</a>.
+    <br />
+    <div class="slide_iframe">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QoatPlzc0-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="card">
     <h3>[2021] Amsource - Rust Web Development Q&A</h3>
     A webinar for Amsource about Rust, how it can improve your own career, the impact in your team and why Rust is a great choice overall. I presented my new book, the language and use cases in the first half, and then answered questions in the second half.
     <br />

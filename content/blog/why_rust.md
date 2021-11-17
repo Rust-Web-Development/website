@@ -1,5 +1,5 @@
 +++
-title = "Why Rust for Web Development? - The Type System"
+title = "Why Rust? - The Type System"
 date = 2021-06-15
 +++
 

@@ -12,7 +12,7 @@ Here is a list of talks I gave about the topic.
     I gave a talk at the Rust&Tell MeetUp about a tutorial I created to learn Rust in a web development context. The <a href="https://git.sr.ht/~gruberb/onetutorial">code can be found here</a>.
     <br />
     <div class="slide_iframe">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/QoatPlzc0-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/QoatPlzc0-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
 

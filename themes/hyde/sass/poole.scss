@@ -351,7 +351,7 @@ tbody tr:nth-child(odd) th {
   }
 }
 
-.post a:hover>h1 {
+.post:hover>h1 {
   color: #ac4142 !important
 }
 
@@ -364,7 +364,7 @@ tbody tr:nth-child(odd) th {
   padding: 20px 5px
 }
 
-.post a:hover {
+.post:hover {
   background: #FCF5F5;
   color: #F03838 !important;
   padding: 20px 12px

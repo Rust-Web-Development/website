@@ -1,6 +1,6 @@
 +++
 title = "Why Rust? - The Type System"
-date = 2021-06-15
+date = "2021-06-15"
 +++
 
 Need a reason or look for arguments to use Rust for your next project? I collect reasons in the "Why Rust" series. This time, we look a bit at the type system.

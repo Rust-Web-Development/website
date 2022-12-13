@@ -12,7 +12,7 @@ You can use the [Rust Playground](https://play.rust-lang.org/) to exercise littl
 For future Rust help, check out the official Discord channels:
 
 * [Rust Community Discord](https://discord.gg/rust-lang-community)
-* [Rust Programming Language Discord](https://discord.gg/rust-lang) for official working groups etc.
+* [Rust Programming Language Zulip](https://rust-lang.zulipchat.com/) for official working groups etc.
 
 And here are channels for other, large projects:
 * [Tokio (Discord)](https://discord.com/invite/tokio)
@@ -22,5 +22,5 @@ Further reading material to study the language:
 
 * [The Rust Programming Language](https://doc.rust-lang.org/book/) - Online
 * [The Rust Programming Language](https://nostarch.com/Rust2018) - NoStarch
-* [Rust for Rustaceans](https://nostarch.com/rust-rustaceans) - NoStarch
+* [Rust Servers, Services, and Apps](https://www.manning.com/books/rust-servers-services-and-apps) - Manning
 

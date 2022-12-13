@@ -373,21 +373,21 @@ tbody tr:nth-child(odd) th {
     padding-top: 0
 }
 
-.post a>h1 {
+.posts a>h1 {
     font-size: 1.3rem
 }
 
 @media screen and (max-width: 1230px) {
-    .post a>h1 {
+    .posts a>h1 {
         font-size: 1.1rem
     }
 }
 
-.post a:hover>h1 {
+.posts a:hover>h1 {
     color: #ac4142 !important;
 }
 
-.post a {
+.posts a {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -396,10 +396,11 @@ tbody tr:nth-child(odd) th {
     padding: 20px 5px;
 }
 
-.post a:hover {
+.posts a:hover {
     background: #FCF5F5;
     color: #F03838 !important;
     padding: 20px 12px;
+    text-decoration: none;
 }
 
 .post-title {
@@ -409,6 +410,10 @@ tbody tr:nth-child(odd) th {
 }
 
 .post-date {
+  display: block;
+}
+
+.posts-date {
     display: inline-block;
     float: right;
     margin-top: -2.5rem;
@@ -417,7 +422,7 @@ tbody tr:nth-child(odd) th {
 }
 
 @media screen and (max-width: 1230px) {
-    .post-date {
+    .posts-date {
         display: none !important;
     }
 }

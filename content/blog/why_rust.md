@@ -1,6 +1,6 @@
 +++
-title = "Why Rust? - The Type System"
-date = "2021-06-15"
+title = "Why Rust for Web Development"
+date = "2022-12-14"
 +++
 
 Need a reason or look for arguments to use Rust for your next project? I collect reasons in the "Why Rust" series. This time, we look a bit at the type system.

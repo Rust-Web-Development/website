@@ -9,8 +9,6 @@ Handpicked resources where I think, once you go through them (it will take proba
 - [Fearless Concurrency - The Rust Programming Language](https://doc.rust-lang.org/book/ch16-00-concurrency.html)
 - [Final Project: Building a Multithreaded Web Server - The Rust Programming Language](https://doc.rust-lang.org/book/ch20-00-final-project-a-web-server.html)
 - [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/html/)
-- [Introduction | ØMQ - The Guide](https://zguide.zeromq.org/)
-- [Writing an OS in Rust](https://os.phil-opp.com/)
 
 ### Required Watching
 - [TCP in Rust - 1](https://www.youtube.com/watch?v=bzja9fQWzdA&)
@@ -49,6 +47,9 @@ Handpicked resources where I think, once you go through them (it will take proba
 
 ### Study Source Code 
 - [System76 · GitHub](https://github.com/system76?q=&type=&language=rust&sort=)
+
+### Long form to understand Rust better
+- [Writing an OS in Rust](https://os.phil-opp.com/)
 
 ##### Misc.
 - [Operating Systems - Concurrency](https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf)

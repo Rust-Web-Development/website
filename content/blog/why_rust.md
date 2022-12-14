@@ -1,9 +1,8 @@
 +++
-title = "Why Rust for Web Development"
+title = "Why Rust for Web Development?"
 date = "2022-12-14"
 +++
 
-Need a reason or look for arguments to use Rust for your next project? I collect reasons in the "Why Rust" series. This time, we look a bit at the type system.
 
 ### Rich type system
 

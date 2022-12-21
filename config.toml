@@ -27,6 +27,6 @@ hyde_links = [
     { url = "https://rustwebdevelopment.com/talks/", name = "Talks" },
     { url = "https://rustwebdevelopment.com/interviews/", name = "Interviews" },
     { url = "https://github.com/Rust-Web-Development", name = "GitHub ↗" },
-    { url = "https://twitter.com/recvonline", name = "Author ↗" },
+    { url = "https://hachyderm.io/@bastian", name = "Author ↗" },
 ]
 hyde_theme = "theme-base-08"

@@ -92,6 +92,8 @@ In addition, it is helpful to know or at least heart about it once how exactly t
 
 When the client sends a HTTP request, the kernel is wrapping the data in a package with a HTTP and TCP header attached to it. It arrives on our server at the so called NIC (network interface card). The client first has to establish a TCP connection to our server. Once done, our kernel opened a socket to which is listening to this address for incoming messages.
 
+If you want to dig deeper into the kernel side of networking, I highly recommend <a href="https://beej.us/guide/bgnet/html/" target="_blank">Beej's Guide to Network Programming</a>.
+
 <img src="https://recv.online/share/kernel.png" />
 
 When we run a web server in Rust, we also have a socket to the operating system side where we can listen to incoming messages. The kernel’s job is to copy the data from the incoming TCP message onto our internal socket and notifies us when new data arrived.

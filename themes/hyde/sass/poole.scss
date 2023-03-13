@@ -523,3 +523,25 @@ a.pagination-item:hover {
   margin: auto;
   padding-bottom: 20px
 }
+
+.sidecar {
+  background-color: rgba(200,1,1, 0.1);
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 85%;
+  margin-bottom: 25px;
+}
+
+.info {
+  padding: 15px;
+  font-size: 85%;
+  background-color: rgba(195, 255, 104, 0.5);
+  margin-bottom: 10px;
+}
+
+.theme-base-08 .content .info a, 
+.theme-base-08 .related-posts .info li a:hover{
+  font-size: 100%;
+}

@@ -11,7 +11,7 @@ Here is a list of interviews I gave about the topic.
     <h3>[2023] Freelance Thrive - Bastian Gruber</h3>
     How to thrive as a "Rust Freelancer".
     <div class="slide_iframe">
-        <iframe src="https://www.youtube.com/watch?v=oQA_bl7-GkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/oQA_bl7-GkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 </div>
 
@@ -19,7 +19,7 @@ Here is a list of interviews I gave about the topic.
     <h3>[2023] Freelance Sucks - Bastian Gruber</h3>
     How "Rust and Tell" started, and what are the downsides of being a freelancer, and how to tackle its challenges.
     <div class="slide_iframe">
-        <iframe src="https://www.youtube.com/watch?v=jRk7QJAr8SU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/jRk7QJAr8SU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 </div>
 

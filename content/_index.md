@@ -5,7 +5,9 @@ date = "2021-06-14"
 
 <h1>Rust Web Development</h1>
 
-Checkout why you want to use Rust for web development via this [blog article](https://rustwebdevelopment.com/blog/why-rust/) on this website. And of course there is the [Rust Web Development book](https://www.manning.com/books/rust-web-development).
+Welcome to your journey into Rust for web development. 
+
+This website is meant to be as a landing page for the [Rust Web Development book](https://www.manning.com/books/rust-web-development), but also a launchpad for other resources.
 
 You can use the [Rust Playground](https://play.rust-lang.org/) to exercise little code snippets and follow along tutorials. The website [AreWeWebYet](https://www.arewewebyet.org/) has crates, tutorials and books you need to get started.
 

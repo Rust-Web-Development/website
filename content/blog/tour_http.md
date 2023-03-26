@@ -8,6 +8,10 @@ This article is part of a chapter of <a href="https://www.manning.com/books/rust
 </div>
 
 ---
+<h4>TL;DR</h4>
+<img src="https://recv.online/share/tco_overview.png" />
+
+---
 
 When we talk about a web service, we, more often than not, mean deployed code which listens on a certain IP address and port and responds to HTTP messages. There are many steps involved for two parties to be able to communicate with each other. Application developers are mainly confronted with two pieces of this process: TCP and HTTP.
 

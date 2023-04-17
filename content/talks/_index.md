@@ -8,6 +8,16 @@ template = "index.html"
 Here is a list of talks I gave about the topic. 
 
 <div class="card">
+    <h3>[2023] The Live Series Webinar - Asynchronous Rust</h3>
+   I gave a 50min webinar about asynchronous Rust. This talk was meant to be a higher-level overview, abut it also covers a behind-the-scenes look into the executor tokio, what patterns you will encounter when using async Rust and which runtime to choose for which use case.  
+    <br />
+    <div class="slide_iframe">
+        <iframe src="https://www.youtube.com/embed/kSQ9-JSl0z4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<div class="card">
     <h3>[2023] Rust Melbourne - The Joy and Adventures of writing Rust for the web</h3>
     A talk about why web development in Rust looks the way it looks. Advantages of using Rust in a web context, tools to use, the why and how of async Rust. I als gave some bonus tidbits about tools to improve your project and showed how to create an API server with axum, which runs a cronjob in the background.
     <br />

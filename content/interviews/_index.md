@@ -8,7 +8,7 @@ template = "index.html"
 Here is a list of interviews I gave about the topic.
 
 <div class="card">
-    <h3>[2023] Software Engineering Radion - Rust Web Development with Bastian Gruber</h3>
+    <h3>[2023] Software Engineering Radio - Rust Web Development with Bastian Gruber</h3>
     The <a href="https://www.se-radio.net/2023/05/se-radio-562-bastian-gruber-on-rust-web-development/">episode</a> is about the book, the state of Web Development in Rust and how to get started with warp, tokio and in general with Rust in a web service context.
 </div>
 

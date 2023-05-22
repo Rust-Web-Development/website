@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>Rust Web Development</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://rustwebdevelopment.com/print.css" media="print">
+      <link rel="stylesheet" href="https://rustwebdevelopment.com/poole.css">
+      <link rel="stylesheet" href="https://rustwebdevelopment.com/hyde.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&family=IBM+Plex+Sans+Condensed&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=IBM+Plex+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+      <!-- Mastodon verification -->
+      <link rel="me" href="https://hachyderm.io/@bastian">
+
+      
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://rustwebdevelopment.com/atom.xml">
+      
+
+      
+      
+    </head>
+
+    <body class="theme-base-08 ">
+        
+            <div class="sidebar">
+                <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                        <a href="https://www.manning.com/books/rust-web-development" target="_blank">
+                            <img class="sidebar-bookcover" src="https://raw.githubusercontent.com/gruberb/gruberb/main/cover.png"/>
+                        </a>
+                        
+                            <a href="https:&#x2F;&#x2F;rustwebdevelopment.com"><h1>Rust Web Development</h1></a>
+                            
+                        
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        
+                        
+                        <li class="sidebar-nav-item"><a href="https:&#x2F;&#x2F;rustwebdevelopment.com&#x2F;blog&#x2F;">Blog</a></li>
+                        
+                        <li class="sidebar-nav-item"><a href="https:&#x2F;&#x2F;rustwebdevelopment.com&#x2F;talks&#x2F;">Talks</a></li>
+                        
+                        <li class="sidebar-nav-item"><a href="https:&#x2F;&#x2F;rustwebdevelopment.com&#x2F;interviews&#x2F;">Interviews</a></li>
+                        
+                        <li class="sidebar-nav-item"><a href="https:&#x2F;&#x2F;github.com&#x2F;Rust-Web-Development">GitHub ↗</a></li>
+                        
+                        <li class="sidebar-nav-item"><a href="https:&#x2F;&#x2F;hachyderm.io&#x2F;@bastian">Author ↗</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="content container">
+            
+<div class="post">
+  <h1 class="post-title">Advanced Rust Web Learning Journey</h1>
+  <span class="post-date">March 14, 2023</span>
+  <p>Handpicked resources where I think, once you go through them (it will take probably a year), but the time is so well spend that here are no &quot;I am going to skim throuh this and see if it's helpful&quot; articles or videos. It is combined CS Networking articles and Rust hands-on tutorials, articles and videos.</p>
+<h3 id="concurrency-in-rust">Concurrency in Rust</h3>
+<ul>
+<li><a href="https://doc.rust-lang.org/book/ch16-00-concurrency.html">Fearless Concurrency - The Rust Programming Language</a></li>
+<li><a href="https://doc.rust-lang.org/book/ch20-00-final-project-a-web-server.html">Final Project: Building a Multithreaded Web Server - The Rust Programming Language</a></li>
+<li><a href="https://tokio.rs/tokio/tutorial">Tokio Tutorial</a></li>
+<li><a href="https://ryhl.io/blog/async-what-is-blocking/">Async: What is blocking?</a></li>
+</ul>
+<h3 id="networking-from-the-ground-up">Networking from the ground up</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=bzja9fQWzdA&amp;">TCP in Rust - 1</a>(video)</li>
+<li><a href="https://www.youtube.com/watch?v=OCpt1I0MWXE">TCP in Rust - 2</a>(video)</li>
+<li><a href="https://www.youtube.com/watch?v=8GE6ltLRJA4">TCP in Rust - 3</a>(video)</li>
+<li><a href="https://www.youtube.com/watch?v=9_3krAQtD2k">Futures in Rust</a>(video)</li>
+<li><a href="https://www.youtube.com/watch?v=b4mS5UPHh20">Rust Channels</a>(video)</li>
+<li><a href="https://zupzup.org/epoll-with-rust/">epoll in Rust</a></li>
+</ul>
+<h3 id="traits">Traits</h3>
+<ul>
+<li><a href="https://fettblog.eu/refactoring-rust-introducing-traits/">Refactoring in Rust: Introducing traits</a></li>
+<li><a href="https://stackoverflow.com/questions/72817819/how-do-i-use-rust-traits-to-abstract-http-call-for-tests">Using traits for better testing</a></li>
+<li><a href="https://jmmv.dev/2022/04/rust-traits-and-dependency-injection.html">Rust traits and dependency injection</a></li>
+<li><a href="https://doc.rust-lang.org/book/ch19-03-advanced-traits.html#specifying-placeholder-types-in-trait-definitions-with-associated-types">Advanced traits</a></li>
+</ul>
+<h3 id="practicing-idomatic-rust">Practicing idomatic Rust</h3>
+<ul>
+<li><a href="https://shane-o.dev/blog/binary-search-rust">Binary Search in Rust</a></li>
+<li><a href="https://github.com/tower-rs/tower/blob/master/guides/building-a-middleware-from-scratch.md">Building a middleware from scratch</a></li>
+<li><a href="https://www.newline.co/@uint/rust-iterators-a-guide--80e35528">Iterators in Rust</a></li>
+<li><a href="https://deterministic.space/elegant-apis-in-rust.html">Elegant APIs in Rust</a></li>
+</ul>
+<h3 id="grpc">gRPC</h3>
+<ul>
+<li><a href="https://konghq.com/blog/building-grpc-apis-with-rust">Building a gRPC API in Rust</a></li>
+<li><a href="https://truelayer.com/blog/grpc-load-balancing-in-rust/">gRPC load balancing in Rust</a></li>
+</ul>
+<h3 id="peer-to-peer">Peer-to-Peer</h3>
+<ul>
+<li><a href="https://morioh.com/p/f1b14f97b537">Simple p2p application in Rust</a></li>
+</ul>
+<h3 id="zero-knowledge-proof">Zero-Knowledge proof</h3>
+<ul>
+<li><a href="https://jtriley.substack.com/p/constructing-zk-snark-circuits">Constructing zkSNARK circuits in Rust</a></li>
+</ul>
+<h3 id="exercises">Exercises</h3>
+<ul>
+<li><a href="https://github.com/pingcap/talent-plan/blob/master/courses/rust/docs/lesson-plan.md">talent-plan/lesson-plan.md at master · pingcap/talent-plan · GitHub</a></li>
+<li><a href="https://github.com/tower-rs/tower/blob/master/guides/building-a-middleware-from-scratch.md">Building a middleware from scratch</a></li>
+<li><a href="https://exercism.io/my/tracks/rust">Rust | Exercism</a></li>
+</ul>
+<h3 id="projects-to-learn-from">Projects to learn from</h3>
+<ul>
+<li><a href="https://os.phil-opp.com/">Writing an OS in Rust</a></li>
+</ul>
+<h5 id="references">References</h5>
+<ul>
+<li><a href="https://rust-unofficial.github.io/patterns/patterns/index.html">Design pattersn in Rust</a></li>
+<li><a href="https://github.com/pretzelhammer/rust-blog/blob/master/posts/tour-of-rusts-standard-library-traits.md">A tour of Rust</a></li>
+</ul>
+
+</div>
+
+        </div>
+
+    </body>
+
+</html>
+
+

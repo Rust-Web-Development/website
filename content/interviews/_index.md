@@ -5,7 +5,13 @@ template = "index.html"
 
 # Interviews about Rust Web Development
 
-Here is a list of interviews I gave about the topic. 
+Here is a list of interviews I gave about the topic.
+
+<div class="card">
+    <h3>[2023] Software Engineering Radion - Rust Web Development with Bastian Gruber</h3>
+    The <a href="https://www.se-radio.net/2023/05/se-radio-562-bastian-gruber-on-rust-web-development/">episode</a> is about the book, the state of Web Development in Rust and how to get started with warp, tokio and in general with Rust in a web service context.
+</div>
+
 
 <div class="card">
     <h3>[2023] Freelance Thrive - Bastian Gruber</h3>
@@ -44,5 +50,3 @@ Here is a list of interviews I gave about the topic.
     <h3>[2021] Rustacean station - Rust Web Development with Bastian Gruber</h3>
     The <a href="https://rustacean-station.org/episode/043-bastian-gruber/">episode</a> is about the book, the state of Web Development in Rust and how to gain more project exposure to Rust.
 </div>
-
-

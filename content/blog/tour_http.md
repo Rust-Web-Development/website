@@ -26,7 +26,7 @@ There is a great advantage in knowing how exactly the communication with TCP wor
 
 <p>UDP packet headers are smaller (8 bytes) and there is no formal connection creation included in the protocol. The order of the packets is not secured and if one message fails to arrive, there is no built-in retry. 
 </p>
-<p>You would use UDP for application like stock quota or streaming services, gaming servers or weather applications. You can resend data more often, and if you want to implement your own retry mechanism. Also, data is getting outdated faster and you might not care about every single packet arrive in the same order or at all. UDP can also be broadcasted to several hosts whereas TCP is always a single client-server connection.
+<p>You would use UDP for application like stock quotes or streaming services, gaming servers or weather applications. You can resend data more often, and if you want to implement your own retry mechanism. Also, data is getting outdated faster and you might not care about every single packet arrive in the same order or at all. UDP can also be broadcasted to several hosts whereas TCP is always a single client-server connection.
 </p>
 <p>You use TCP when you want a reliable data transfer. For example, banking applications or in e-commerce, where you don’t want to lose sensitive information along the way or have to communicate the state between client and server.
 </p>
@@ -74,7 +74,7 @@ Therefore, Rust decided just to include a basic understanding of TCP in the stan
 
 <div class="sidecar">
 <h5>Rust crates</h5>
-<p>External libraries or packages are called “crates” in Rust. They are hosted on a website called crates.io and will be retrieved ones a Rust project compiles. You can add crates to a Rust project in the Cargo.toml file, and after using the cargo build or cargo run command on the terminal, the newly added crates will be downloaded and added to your local project.</p> 
+<p>External libraries or packages are called “crates” in Rust. They are hosted on a website called crates.io and will be retrieved once a Rust project compiles. You can add crates to a Rust project in the Cargo.toml file, and after using the cargo build or cargo run command on the terminal, the newly added crates will be downloaded and added to your local project.</p> 
 </div>
 
 There are also crates for web frameworks, which include all the layers beneath them (HTTP, TCP etc.) and offer all the modern ergonomics like parsing URL query parameter, reading and returning JSON and so on. 
@@ -111,7 +111,7 @@ It notifies the process which is listening to new data to this socket and copies
 <p>When a client and server connect via TCP, they send data over a physical wire in a so-called stream. This data has no clear beginning and end. Once the connection is open, you send data and the kernel decides when the buffer is full and sends data out to the client and vice-versa. To be able to tell when “a full” message arrived, we need a protocol on top of TCP to tell us about the beginning, the structure and end of a message and conversation. In most cases, this protocol is HTTP.</p>
 </div>
 
-We learned earlier that Rust supports TCP right out of the box. Therefore, we can create, open and listen to a TCP socket within Rust. Ones we receive a message, we can also answer back on the same socket. We can basically send any text back to the socket, we just have to be aware that the other side can interpret what we are sending.
+We learned earlier that Rust supports TCP right out of the box. Therefore, we can create, open and listen to a TCP socket within Rust. Once we receive a message, we can also answer back on the same socket. We can basically send any text back to the socket, we just have to be aware that the other side can interpret what we are sending.
 
 Let’s open a socket, so the kernel knows where to forward incoming requests to. Each socket has to know the protocol being used (TCP in our case), the IP address and the port. In Rust, the TcpListener is handling the job for us, and we can use bind to tell the kernel the address and port we are listening to.
 
@@ -139,7 +139,7 @@ This is a step in the right direction. But why don’t we see any data or HTTP h
 <p>Connecting to a port and establishing a connection can fail for many reasons. Therefore both the TcpListener and the stream of the type TcpStream will return a Result<T,E>. In our example we assume everything works correctly, but in a production environment, the port you are choosing can already be busy listening to another application. Once opened, the incoming stream is actually an attempt of a connection, which can fail due to buffer limitations for example. </p>
 </div>
 
-When reading from the stream like that, the baseline we expect is a UTF8 encoded text. At this point, the kernel already stripped away the TCP header and all we have left is the data encapsulated in it. This can either be HTTP headers + data or some other headers attached to the data.
+When reading from the stream like that, the baseline we expect is UTF8 encoded text. At this point, the kernel already stripped away the TCP header and all we have left is the data encapsulated in it. This can either be HTTP headers + data or some other headers attached to the data.
 
 <img src="https://recv.online/share/message.png" />
 
@@ -213,7 +213,7 @@ It includes:
 <p>However, have in mind that you can install extensions for VIM or your IDE to run a code analyzer while you write it. This will highlight errors before you start an application again with cargo run. Since undefined behavior is almost impossible in Rust, you save countless hours afterwards compared to other languages</p>
 </div>
 
-Instead of just printing out the stream, we can start to look at the HTTP specification, store the content in an array and iterate over, line by line, and create a HTTP struct out of it. This work is not trivial, since we need to check the length of the message from the HTTP header and build the full message ourselves.
+Instead of just printing out the stream, we can start to look at the HTTP specification, store the content in an array and iterate over it line by line, and create a HTTP struct out of it. This work is not trivial since we need to check the length of the message from the HTTP header and build the full message ourselves.
 
 Thankfully there are already crates published in the Rust ecosystem which help you with this task. So, deploying a http server in production is much less work than we do here by hand.
 

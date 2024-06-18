@@ -21,21 +21,17 @@ Here is a list of talks I gave about the topic.
     <h3>[2023] Rust Melbourne - The Joy and Adventures of writing Rust for the web</h3>
     A talk about why web development in Rust looks the way it looks. Advantages of using Rust in a web context, tools to use, the why and how of async Rust. I als gave some bonus tidbits about tools to improve your project and showed how to create an API server with axum, which runs a cronjob in the background.
     <br />
-    <a href="https://docs.google.com/presentation/d/e/2PACX-1vQmmPnYfb4g7GGbOeUmx2PDgk6qNnoj7fGhwzPJUD2o5cvVX3vw2jjlICuT1Pv-kcd6AQdj2AsfIJ6U/pub?start=false&loop=false&delayms=3000">The slides are here.</a>
+    <a href="https://www.slideshare.net/slideshow/rust-melbourne-meetup-rust-web-development/269743693">The slides are here.</a>
 </div>
 
 <div class="card">
     <h3>[2021] Rust Vancouver - Your Rust web development tool set</h3>
     I gave a talk at the Rust Vancouver MeetUp about the tools and crates involved in creating a Rust web service. We looked behind the scenes of an async runtime, why it's needed and how a running example web service looks like. 
-    <br />
-    <a href="https://recv.online/vancouver">The slides are here.</a>
 </div>
 
 <div class="card">
     <h3>[2021] Rust Oslo - The progression of a Rust web service</h3>
     I gave a talk at the Rust Oslo MeetUp about how to start, maintain and develop a Rust web service. The tools envolved and the mindset needed to create solid Rust web services. 
-    <br />
-    <a href="https://recv.online/oslo">The slides are here.</a>
 </div>
 
 

@@ -23,7 +23,6 @@ highlight_code = true
 [extra]
 # Put all your custom variables here
 hyde_links = [
-    { url = "https://rustwebdevelopment.com/blog/", name = "Blog" },
     { url = "https://rustwebdevelopment.com/talks/", name = "Talks" },
     { url = "https://rustwebdevelopment.com/interviews/", name = "Interviews" },
     { url = "https://github.com/Rust-Web-Development", name = "GitHub ↗" },
